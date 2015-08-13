@@ -1,26 +1,21 @@
-#### HISTOFCOR ############################################################
-
 # ------------------------------------------------------------------------------ 
 # Quantlet: histofcor
 # ------------------------------------------------------------------------------ 
-# Description: Plots a histogram of correlations to make Simpson's paradox 
-#              visible.
-# ------------------------------------------------------------------------------ 
-# Usage: -
-# ------------------------------------------------------------------------------ 
-# Inputs: Data frame with one level and a cluster variable, e. g. PISA data.
-# ------------------------------------------------------------------------------ 
-# Output: A histogram of correlations, [[1]] group means for both level-1 
-#         variables as well as their correlations and [[2]] correlation plus 
-#         CI for overall means.
-# ------------------------------------------------------------------------------ 
-# Keywords: MLM, HLM, random effects, fixed effects, Simpson's paradox,
-#				psychology, multilevel, diagnostic
+# Book/Project: New Book
+# ------------------------------------------------------------------------------
+# Description: Plots a histogram of correlations to make Simpson's paradox visible.
+# ------------------------------------------------------------------------------
+# Keywords: MLM, HLM, random effects, fixed effects, Simpson's paradox, psychology, multilevel, diagnostic
 # ------------------------------------------------------------------------------
 # See also: -
 # ------------------------------------------------------------------------------
 # Author: Kai Horstmann, Caroline Wehner, 2015/06/14
 # ------------------------------------------------------------------------------
+# Inputs: Data frame with one level and a cluster variable, e. g. PISA data.
+# ------------------------------------------------------------------------------ 
+# Output: A histogram of correlations, [[1]] group means for both level-1 variables as well
+#         as their correlations and [[2]] correlation plus CI for overall means.
+# ------------------------------------------------------------------------------ 
 # Datafile: bh1996
 # ------------------------------------------------------------------------------ 
 
