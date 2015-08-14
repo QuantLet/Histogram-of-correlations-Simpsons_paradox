@@ -1,7 +1,8 @@
-# ------------------------------------------------------------------------------ 
-# Quantlet: histofcor
+
 # ------------------------------------------------------------------------------ 
 # Book/Project: New Book
+# ------------------------------------------------------------------------------ 
+# Quantlet: histofcor
 # ------------------------------------------------------------------------------
 # Description: Plots a histogram of correlations to make Simpson's paradox visible.
 # ------------------------------------------------------------------------------
@@ -98,7 +99,6 @@ HistOfCor = function(data, var1, var2, cluster) {
   results = list(out.data, cor.lvll2)
   results
 }
-
 
 # get output
 # quartz()
