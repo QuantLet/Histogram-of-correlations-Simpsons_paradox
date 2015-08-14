@@ -11,6 +11,8 @@
 # ------------------------------------------------------------------------------
 # Author: Kai Horstmann, Caroline Wehner, 2015/06/14
 # ------------------------------------------------------------------------------
+# Submitted: Fri, August 14 2015 by Theo Dannenberg
+# ------------------------------------------------------------------------------
 # Inputs: Data frame with one level and a cluster variable, e. g. PISA data.
 # ------------------------------------------------------------------------------ 
 # Output: A histogram of correlations, [[1]] group means for both level-1 variables as well
@@ -18,7 +20,6 @@
 # ------------------------------------------------------------------------------ 
 # Datafile: bh1996
 # ------------------------------------------------------------------------------ 
-
 
 # install and load packages
 libraries = c("multilevel", "data.table")
