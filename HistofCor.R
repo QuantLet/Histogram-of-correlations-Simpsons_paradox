@@ -8,7 +8,7 @@
 # ------------------------------------------------------------------------------
 # Usage: - 
 # ------------------------------------------------------------------------------
-# Keywords: histogram, correlation, clustering, confidence-interval, mean
+# Keywords: plot, vizualization, histogram, correlation, clustering, confidence-interval, mean
 # ------------------------------------------------------------------------------
 # Inputs: Data frame with one level and a cluster variable, e. g. PISA data.
 # ------------------------------------------------------------------------------ 
