@@ -1,5 +1,5 @@
 
-Name of QuantLet : histofcor
+Name of QuantLet : HistofCor
 
 Published in : Psychological diagnostics
 
@@ -15,4 +15,3 @@ Input: Data frame with one level and a cluster variable, e. g. PISA data.
 
 Output: 'A histogram of correlations, [[1]] group means for both level-1 variables as well
         as their correlations and [[2]] correlation plus CI for overall means.'
-
