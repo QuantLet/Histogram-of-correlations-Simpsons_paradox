@@ -1,23 +1,3 @@
-# ------------------------------------------------------------------------------ 
-# Quantlet: histofcor
-# ------------------------------------------------------------------------------
-# Book/Project: -
-# ------------------------------------------------------------------------------ 
-# Description: Plots a histogram of correlations to make Simpson's paradox visible.
-# ------------------------------------------------------------------------------
-# Keywords: plot, vizualization, random, histogram, correlation, clustering, confidence-interval, mean
-# ------------------------------------------------------------------------------
-# Inputs: Data frame with one level and a cluster variable, e. g. PISA data.
-# ------------------------------------------------------------------------------ 
-# Output: A histogram of correlations, [[1]] group means for both level-1 variables as well
-#         as their correlations and [[2]] correlation plus CI for overall means.
-# ------------------------------------------------------------------------------
-# See also: -
-# ------------------------------------------------------------------------------
-# Author: Kai Horstmann [New], Caroline Wehner [New]
-# ------------------------------------------------------------------------------
-# Datafile: bh1996
-# ------------------------------------------------------------------------------ 
 
 # install and load packages
 libraries = c("multilevel", "data.table")
@@ -76,7 +56,7 @@ HistOfCor = function(data, var1, var2, cluster) {
   head.text = bquote(paste("Correlation of ", bold(.(var1)), " and ", bold(.(var2)), sep = " "))  
   mtext(side = 3, head.text, line = 2, cex = .8)  # variable for which the correlations are produced
   abline(v = lvl2.cor.r, col = "red")  # add line lvl2 cor 
-  abline(v = lvl1.cor.r, col = "green")  # add line lvl1 cor (correlation across clusters)
+  abline(v = lvl1.cor.r, col = "forestgreen")  # add line lvl1 cor (correlation across clusters)
   meanofcor = mean(level1.values.dt$cor.lvl1, na.rm=T)  
   abline(v = meanofcor, col = "blue") # add line lvl1 cor mean
   testval.2 = bquote(paste("Level-2 correlartion (means, red): ", italic("r "), "= ", .(lvl2.cor.r), 
@@ -99,5 +79,4 @@ HistOfCor = function(data, var1, var2, cluster) {
 
 # get output
 # quartz()
-result = HistOfCor(bh1996, var1 = "COHES", var2 = "LEAD", cluster = "GRP")
-result
+(result = HistOfCor(bh1996, var1 = "COHES", var2 = "LEAD", cluster = "GRP"))
